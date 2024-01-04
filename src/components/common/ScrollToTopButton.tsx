@@ -5,20 +5,13 @@ export default function ScrollToTopButton() {
   const [showButton, setShowButton] = useState(false)
 
   const handleScroll = () => {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      setShowButton(true)
-    } else {
-      setShowButton(false)
-    }
+    setShowButton(
+      document.body.scrollTop > 20 || document.documentElement.scrollTop > 20,
+    )
   }
 
   const backToTop = () => {
-    document.documentElement.style.scrollBehavior = 'smooth'
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop = 0
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   useEffect(() => {

@@ -30,17 +30,17 @@ const Betsy = ({ attend, open, success, bestValse }: condition) => {
     {
       img: best_1,
       text: '오늘의',
-      awards: bestValse[0] == 1 ? true : false,
+      awards: bestValse[0] === 1,
     },
     {
       img: best_2,
       text: '금주의',
-      awards: bestValse[1] == 1 ? true : false,
+      awards: bestValse[1] === 1,
     },
     {
       img: best_3,
       text: '이번달',
-      awards: bestValse[2] == 1 ? true : false,
+      awards: bestValse[2] === 1,
     },
   ]
 

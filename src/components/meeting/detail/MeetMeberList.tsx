@@ -86,7 +86,7 @@ export default function MeetMemberList({
             />
           </Modal>
         )}
-        {participatedMem && participatedMem.length > 4 ? (
+        {participatedMem?.length > 4 ? (
           <Swiper
             observer={true}
             loop={participatedMem.length >= 1}
@@ -147,7 +147,7 @@ export default function MeetMemberList({
           ))
         )}
         {/* 이전, 다음 버튼 커스텀 */}
-        {participatedMem && participatedMem.length > 4 && (
+        {participatedMem?.length > 4 && (
           <>
             <button
               className='absolute top-1/2 -left-[50px]'

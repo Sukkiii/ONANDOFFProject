@@ -42,6 +42,7 @@ export default function SelectBox({
 
   const handleClickOutside = (event: MouseEvent) => {
     if (
+      isOpen &&
       selectBoxRef.current &&
       !selectBoxRef.current.contains(event.target as Node)
     ) {
@@ -50,12 +51,16 @@ export default function SelectBox({
   }
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside)
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
     }
-  }, [])
+  }, [isOpen])
 
   useEffect(() => {
     // value prop이 변경될 때마다 selectedValue를 업데이트

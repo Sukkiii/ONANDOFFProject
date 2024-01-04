@@ -3,14 +3,14 @@ import { ChangeEvent } from 'react'
 interface RadioButtonsProps {
   data: { text: string; value: number }[]
   name: string
-  clickChange?: (value: number) => void
+  handleRadioChange?: (value: number) => void
   selectedValue?: number | null
   disabled?: boolean
 }
 
 export default function RadioButtons({
   data,
-  clickChange,
+  handleRadioChange,
   selectedValue,
 }: RadioButtonsProps) {
   return (
@@ -24,7 +24,7 @@ export default function RadioButtons({
               value={item.value}
               onChange={(e: ChangeEvent<HTMLInputElement>) => {
                 const value = Number(e.target.value)
-                clickChange?.(value)
+                handleRadioChange?.(value)
               }}
               checked={selectedValue === item.value}
             />

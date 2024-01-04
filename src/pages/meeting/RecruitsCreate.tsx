@@ -312,7 +312,7 @@ export default function RecruitsCreate() {
               <RadioButtons
                 data={category}
                 name='category'
-                clickChange={handleCategoryChange}
+                handleRadioChange={handleCategoryChange}
                 selectedValue={selectedCategory}
               />
             </div>
@@ -482,7 +482,7 @@ export default function RecruitsCreate() {
               <RadioButtons
                 data={online}
                 name='online'
-                clickChange={handleOnLineChange}
+                handleRadioChange={handleOnLineChange}
                 selectedValue={selectedOnLine}
               />
               {getErrorMessage('online')}

@@ -17,7 +17,7 @@ export default function ChatRoomMessage({
   return (
     <div className='chat-message'>
       <div className={`flex items-end ${isSelf && 'justify-end'} h-full`}>
-        <div className='flex flex-col items-start order-2 max-w-xs mx-2 space-y-1 text-xs'>
+        <div className='flex flex-col items-start order-2 max-w-xs mx-2 space-y-1 text-xs dark:text-dark-main-color'>
           {!isSelf && <span>{user.username}</span>}
           <div className='flex items-end gap-1'>
             <div

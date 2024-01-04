@@ -351,7 +351,7 @@ export default function RecruitsEdit() {
               <RadioButtons
                 data={category}
                 name='category'
-                clickChange={handleCategoryChange}
+                handleRadioChange={handleCategoryChange}
                 selectedValue={selectedCategory}
                 disabled={!!selectedCategory}
               />
