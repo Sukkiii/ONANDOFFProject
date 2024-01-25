@@ -1,6 +1,6 @@
 # 스터디 매칭 서비스 - 온앤오프 (ON&OFF)
 
-Image
+<img src="https://github.com/Sukkiii/TodoReactTS/assets/122197644/99eea9ba-41bd-41bd-8d65-5ddf6fbf4151" width='300' />
 
 <br />
 
@@ -20,27 +20,90 @@ Image
 
 # ✨ 주요 기능
 
-### 1. 유저 관리
+## 🎬 주요기능 시연
 
+**메인 페이지, 로그인, 무한 스크롤**
+<br />
+<img src='https://github.com/Sukkiii/TodoReactTS/assets/122197644/949d5128-06f9-46e4-953e-64574a10f460' width='700'>
+<br />
+**모임상세, 유저평가, 채팅기능**
+<br />
+<img src='https://github.com/Sukkiii/TodoReactTS/assets/122197644/2ee8d909-f8ef-405f-9ec4-0f7d235a94f2' width='700'>
+<br />
+**마이페이지, 프로필 변경, 카테고리 확인**
+<br />
+<img src='https://github.com/Sukkiii/TodoReactTS/assets/122197644/d2b1c5f3-b1e9-4e63-8bfc-3024aa074c64' width='700'>
+<br />
+**모임 등록하기, 모임 수정하기**
+<br />
+<img src='https://github.com/Sukkiii/TodoReactTS/assets/122197644/ee8c63f9-7184-4892-b4b1-39a7bdf15eea' width='700'>
+<br />
+**반응형 웹사이트**
+<br />
+<img src='https://github.com/Sukkiii/TodoReactTS/assets/122197644/0b780ca7-44c4-4ebb-9762-48450a731889' width='330'>
+<br />
+**다크모드**
+<br />
+<img src='https://github.com/Sukkiii/TodoReactTS/assets/122197644/80562bc9-732f-4095-9a57-d1dac5a807a1' width='700'>
+
+## 💻 주요기능 페이지별
+### 1. 메인 페이지
 - 소셜 로그인(구글, 카카오)
+- 무한 스크롤
+- 쿠키 모달창
+- 카테고리별 인기모임 노출
+- 해시 태그 검색 기능
+- 좋아요 누르기 기능
 
-- 유저 신고
+### 2. 크루/챌린지 모임 페이지
 
-- 유저 평가 (같은 모임에 참여중인 유저)
+- 무한 스크롤
+- 검색창 및 해시태그 검색
+- 카테고리별 모임 노출 구현
+- 프로필 클릭시 마이페이지 이동
+- 좋아요 누르기 기능 
 
-### 2. 모임 기능
+### 3. 모임만들기 및 수정하기 페이지
+- 모임 만들기 & 모임 수정하기
+- React-hook-form library 사용
+- DayPicker를 이용한 모임 일정 날짜 선택
+- 주소 입력시 OpenAPI사용
+- 공통 컴포넌트로 Input, TextArea, RadioButton 등 세분화
+- Form-data로 API Post
 
-- 모임 등록, 수정, 삭제, 목록, 상세 보기
-
-- 모임 상태 관리 (신청, 취소, 승인, 거절)
-
+### 4. 모임 상세 페이지
+- 모임 정보 확인
+- 유저 평가
 - 모임 신고
+- 카카오 맵 API 사용로 모임 위치 보여주기
 
-- 채팅 (같은 모임에 참여중인 유저)
+### 5. 모임 신청 페이지
+- 모임 이용 수칙 확인
+- 방장 질문에 대한 답변
 
-### 3. 반응형 웹 페이지
+### 6. 마이 페이지
+- 프로필 설정/변경 기능
+- 모임별 카테고리 기능
+- 카테고리 모임별 확인
+- 배지 획득 (모임 참여, 모임 열기 등 챌린지)
 
-### 4. 다크모드 (theme 전환)
+### 6-2. 신청자 관리 페이지
+- 내가 개설한 모임 속 신청자 관리 페이지
+- 방장이 요청한 사전 질문 답변 확인
+- 신청자 수락 및 거절 기능
+- 방장 외 확인 불가 페이지
+
+### 7. 채팅 페이지
+- SocketIo를 사용한 채팅 구현
+- 내가 참가중인 채팅방 목록 확인
+- 악성 유저 차단을 위한 RateLimit
+- RealTime 적용
+- 채팅에 참여중인 유저 확인
+- 유저 정보 변경시 (profile, 닉네임) 즉각 변화
+
+### 8. 전체 페이지 반응형 웹페이지 적용
+
+### 9. 다크모드 (theme 전환)
 
 <br />
 
